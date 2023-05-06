@@ -1,0 +1,47 @@
+.user-container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: whitesmoke;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+.select-entry {
+  flex: 0 0 30%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 3rem;
+  font-size: 2.8rem;
+  font-weight: 650;
+  letter-spacing: 0.25rem;
+}
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 3rem;
+}
+.user-header-input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#search {
+  flex: 0 0 20rem;
+  margin-right: 3rem;
+}
+#show-entry {
+  flex: 0 0 6rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.entry-span {
+  font-size: 1.6rem;
+  margin: 0 1.5rem;
+  color: #1d1d1d;
+  font-weight: 400;
+}
