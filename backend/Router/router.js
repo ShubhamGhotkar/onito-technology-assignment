@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 require("../Database/databaseConnect");
 
-// const userDetails = require("../Model/userDetails");
 const userDetails = require("../Model/testScheema");
 
 router.post("/post-user", async (req, res) => {
@@ -31,8 +30,6 @@ router.post("/post-user", async (req, res) => {
 
   if (!name || !dateOfBirthOrAge || !sex)
     return res.status(422).json({ error: `Input Field Required` });
-
-  console.log(req.body);
 
   const newUser = new userDetails({
     name,

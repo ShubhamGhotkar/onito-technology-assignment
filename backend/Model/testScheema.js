@@ -1,26 +1,3 @@
-// name: 'Shubham Ghotkar',
-//   dateOfBirthOrAge: '23',
-//   sex: 'male',
-//   mobile: '9325061820',
-//   govtIssueIdtype: 'adhar',
-//   govtId: '301357167275',
-
-// govtId: '301357167275',
-// occupation: 'Vegetable Seller',
-// religion: 'Hinduism',
-// maritalStatus: 'unmaried',
-// bloodGroup: 'A+',
-// nationlity: 'indian',
-// guardianDetailsLable: 'Mr',
-// guardianName: 'vishnu',
-// email: 'pghotkar931@gmail.com',
-// emergencyContactNo: '',
-// address: 'near Madankar Layout',
-// state: 'Maharashtra ',
-// city: 'Mumbai',
-// country: 'India',
-// pincode: '442202'
-
 const mongoose = require("mongoose");
 
 const testSchema = mongoose.Schema({
@@ -42,9 +19,7 @@ const testSchema = mongoose.Schema({
   govtId: {
     type: String,
   },
-  // govtId: {
-  //   type: String,
-  // },
+
   occupation: {
     type: String,
   },

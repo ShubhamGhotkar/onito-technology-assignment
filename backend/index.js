@@ -3,7 +3,7 @@ const app = express();
 
 require("./Database/databaseConnect");
 app.use(express.json());
-require("./Model/userDetails");
+require("./Model/testScheema");
 
 app.use(require("./Router/router"));
 

@@ -1,4 +1,3 @@
-import { row } from "./row";
 export const column = [
   {
     name: "Name",
