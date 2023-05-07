@@ -7,11 +7,14 @@ export const userScheema = yup.object().shape({
 });
 
 export const mobileScheema = yup.object().shape({
+  mobile: yup.string().matches(/^[6-9]\d{8}$/, "Invalid mobile number"),
+});
+export const emergencyScheema = yup.object().shape({
   mobile: yup.string().matches(/^[6-9]\d{9}$/, "Invalid mobile number"),
 });
 
 export const adharScheema = yup.object().shape({
-  govtId: yup.string().matches(/^[0-9]{12}$/, "Invalid Aadhar number"),
+  govtId: yup.string().matches(/^[0-9]{11}$/, "Invalid Aadhar number"),
 });
 
 export const panScheema = yup.object().shape({

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { mobileScheema } from "./userScheema";
+import { emergencyScheema } from "./userScheema";
 import "./style.css";
 
 const genderPrefix = ["Mr", "Ms", "Mx"];
@@ -13,7 +13,7 @@ function ContactDetails() {
     const mobileValidate = {
       mobile: e.target.value,
     };
-    const isNumberValid = await mobileScheema.isValid(mobileValidate);
+    const isNumberValid = await emergencyScheema.isValid(mobileValidate);
     if (isNumberValid) {
       setError(false);
     }

@@ -64,6 +64,6 @@ const testSchema = mongoose.Schema({
   },
 });
 
-const test = mongoose.model("test-scheema-1", testSchema);
+const test = mongoose.model("onito-tech-data", testSchema);
 
 module.exports = test;

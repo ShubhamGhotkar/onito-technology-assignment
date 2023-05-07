@@ -53,7 +53,7 @@ function UserList() {
             type="text"
             placeholder="Search Here"
             id="search"
-            onChange={handleChange}
+            onInput={handleChange}
           />
         </div>
       </div>

@@ -87,7 +87,7 @@ function Form() {
         const data = await res.json();
 
         if (data || cancleBtn) {
-          window.alert("User Added Sucessfully");
+          await window.alert("User Added Sucessfully");
           name.value = "";
           dateOfBirthOrAge.value = "";
           sex.value = "";
