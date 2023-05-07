@@ -60,6 +60,12 @@ function Form() {
       pincode: pincode.value,
     };
 
+    if (name.value === "") window.alert("Name field required");
+    else if (dateOfBirthOrAge.value === "")
+      window.alert("Date or Age field required");
+    else if (sex.value === "select sex" || sex.value === "")
+      window.alert("Sex field required");
+
     const obj = {
       name: name.value,
       dateOfBirthOrAge: dateOfBirthOrAge.value,
